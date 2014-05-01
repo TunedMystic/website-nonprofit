@@ -1,6 +1,27 @@
 # Include your project-specific ignores in this file
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 
-bower_components/
+#bower_components/
+bower_components/bootstrap/grunt/
+bower_components/bootstrap/less/
+bower_components/bootstrap/test_infra/
+bower_components/bootstrap/.bower.json
+bower_components/bootstrap/bower.json
+bower_components/bootstrap/Gruntfile.js
+bower_components/bootstrap/LICENSE
+bower_components/bootstrap/package.json
+bower_components/bootstrap/README.md
+
+bower_components/font-awesome/src/
+bower_components/font-awesome/less/
+bower_components/font-awesome/scss/
+bower_components/font-awesome/.bower.json
+bower_components/font-awesome/bower.json
+bower_components/font-awesome/Gruntfile.js
+bower_components/font-awesome/LICENSE
+bower_components/font-awesome/package.json
+bower_components/font-awesome/README.md
+
+bower_components/jquery/src/
 
 misc/
