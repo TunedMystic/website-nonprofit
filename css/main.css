@@ -91,12 +91,140 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+@font-face {
+  font-family: crimson;
+  src: url("../font/CrimsonText-Roman.ttf");
+}
 
+body {
+  background: url("../img/bg.jpg") no-repeat center center fixed;
+  
+  min-width: 100%; 
+  min-height: 100%;
+  background-size: cover;
+}
 
+ul {
+  list-style: none;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+}
 
+li {
+  float: left;
+}
 
+a:hover {
+  text-decoration: none;
+}
 
+.space-50 {
+  height: 50px;
+}
 
+.tagline {
+  font-family: crimson;
+  font-size: 65px;
+  color: #C6E5C8;
+  
+  /*position: fixed;*/
+  top: 28%;
+  text-shadow: 2px 2px 8px rgba(29, 29, 29, 1);
+}
+
+.tagline span {
+  /* -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.75); */
+  text-shadow: 2px 2px 4px rgba(150, 150, 150, 1);
+}
+
+.mid-icon {
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  width: 150px;
+  /* stackoverflow.com/questions/7558642/left50-element-not-appearing-in-middle-of-page */
+  margin-left: -75px;
+  
+
+  font-family: Georgia, Times, "Times New Roman", serif;
+  color: #F5BBDC;
+}
+
+.mid-icon p {
+  
+}
+
+.mid-icon p span {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+  line-height: 1;
+  vertical-align: top;
+  font-size: 20px;
+}
+
+.red-heart {
+  color: #C52323;
+  margin-top: -2px;
+}
+
+.site-nav-top-wrap {
+  /*background-color: #595959;*/
+  padding: 10px;
+}
+
+.site-nav-top {
+  float: right;
+  /*background-color: #222;*/
+  background: rgba(34, 34, 34, .3);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.site-nav-top li {
+  
+  font-family: crimson;
+  font-size: 25px;
+  line-height: 1.5;
+  margin-right: 15px;
+  padding: 0 10px 0 10px;
+  
+  text-shadow: 2px 2px 8px rgba(29, 29, 29, 1);
+  
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
+
+.site-nav-top a {
+  color: #C6E5C8;
+  
+  -webkit-transition: color 400ms ease-out;
+  -moz-transition: color 400ms ease-out;
+  -o-transition: color 400ms ease-out;
+  transition: color 400ms ease-out;
+}
+
+.site-nav-top a:hover {
+  color: #CFAC61;
+}
+
+#footer {
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=60);
+
+  /* Netscape */
+  -moz-opacity: 0.6;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.6;
+
+  /* Good browsers */
+  opacity: 0.6;
+}
 
 
 
