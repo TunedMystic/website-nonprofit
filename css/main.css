@@ -123,13 +123,30 @@ a:hover {
   height: 50px;
 }
 
+/*.miiran-logo {
+  background-image: url("../img/miiran_logo.png");
+  width: 110px;
+  height: 41px;
+}*/
+
+.miiran-logo-wrap { 
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.miiran-logo {
+  overflow: auto;
+  display: inline-block;
+}
+
 .tagline {
   font-family: crimson;
-  font-size: 65px;
+  font-size: 60px;
   color: #C6E5C8;
   
   /*position: fixed;*/
-  top: 28%;
+  /*top: 38%;*/
+  margin-top: 70px;
   text-shadow: 2px 2px 8px rgba(29, 29, 29, 1);
 }
 
@@ -138,6 +155,15 @@ a:hover {
   -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.75); */
   text-shadow: 2px 2px 4px rgba(150, 150, 150, 1);
+}
+
+.fancy-hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(221, 221, 221, 0.75), rgba(0,0,0,0)); 
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
 }
 
 .mid-icon {
@@ -186,10 +212,12 @@ a:hover {
 .site-nav-top li {
   
   font-family: crimson;
-  font-size: 25px;
+  /*font-size: 25px;*/
+  font-size: 16px;
+  letter-spacing: 1px;
+  
   line-height: 1.5;
-  margin-right: 15px;
-  padding: 0 10px 0 10px;
+  padding: 0 15px 0 15px;
   
   text-shadow: 2px 2px 8px rgba(29, 29, 29, 1);
   
@@ -225,6 +253,87 @@ a:hover {
   /* Good browsers */
   opacity: 0.6;
 }
+
+
+/*Large devices (large desktops, 1200px and up):*/
+@media only screen and (max-width: 1200px) {
+  
+}
+
+/*Medium devices (desktops, 992px and up): */
+@media only screen and (max-width: 992px) {
+  
+  .tagline {
+    font-size: 50px;
+  }
+  
+}
+
+/*Small devices (tablets, 768px and up):*/ 
+@media only screen and (max-width: 768px) {
+  
+  .miiran-logo-wrap {
+    text-align: center;
+  }
+  
+  .tagline {
+    position: fixed;
+    left: 50%;
+    font-size: 40px;
+    margin-left: -152.5px;
+    text-align: center;
+  }
+  
+  .site-nav-top {
+    position: fixed;
+    left: 50%;
+    margin-left: -156.5px;
+  }
+  
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .tagline {
+    margin-top: 200px;
+  }
+  
+  .site-nav-top {
+    position: fixed;
+    left: 50%;
+    margin-left: -62px;
+    text-align: center;
+    background: none;
+    
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+  }
+  
+  .site-nav-top li{
+    float: none;
+    background: rgba(34, 34, 34, .3);
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+    margin-top: 12px;
+  }
+  
+}
+
+/* Extra-Small(?) devices (tablets, 768px and up):*/ 
+@media only screen and (max-width: 400px) {
+  
+  .tagline {
+    font-size: 28px;
+    margin-left: -106px;
+  }
+  
+}
+
+
 
 
 
